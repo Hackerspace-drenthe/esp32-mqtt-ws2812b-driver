@@ -11,7 +11,9 @@ This simple firmware connects to MQTT and listens for a JSON message that specif
     4. Configure it to your heart's content
 4. Run `make flash` (To build and upload it to your ESP32)
 
+**If your ESP32 is not connected to `/dev/ttyACM0`, you must add `PORT=...` to `make flash` or `make monitor`.**
+
 Other useful commands:
 - `make build` (Builds the project without uploading)
-- `make monitor` (Starts the serial monitor)
+- `make monitor` (Starts the serial monitor; Press `CTRL+]` to exit)
 - `make clean` (Clean the build directory)
