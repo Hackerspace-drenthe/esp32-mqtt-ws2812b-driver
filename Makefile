@@ -1,12 +1,15 @@
 PORT ?= /dev/ttyACM0
 
-IDF_PATH ?= $(shell cat .IDF_PATH 2>/dev/null || echo `pwd`/esp-idf)
-IDF_TOOLS_PATH ?= $(shell cat .IDF_TOOLS_PATH 2>/dev/null || echo `pwd`/esp-idf-tools)
+MY_IDF_PATH ?= $(shell cat .IDF_PATH 2>/dev/null || echo `pwd`/esp-idf)
+MY_IDF_TOOLS_PATH ?= $(shell cat .IDF_TOOLS_PATH 2>/dev/null || echo `pwd`/esp-idf-tools)
 IDF_BRANCH ?= release/v5.4
 #IDF_COMMIT ?= c57b352725ab36f007850d42578d2c7bc858ed47
 IDF_EXPORT_QUIET ?= 1
 IDF_GITHUB_ASSETS ?= dl.espressif.com/github_assets
 MAKEFLAGS += --silent
+
+IDF_PATH = $(MY_IDF_PATH)
+IDF_TOOLS_PATH = $(MY_IDF_TOOLS_PATH)
 
 SHELL := /usr/bin/env bash
 
