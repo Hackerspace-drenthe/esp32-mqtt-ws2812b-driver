@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "*.inc": "c",
+        "Kconfig": "plaintext",
+        "ws2812.h": "c",
+        "esp_wifi.h": "c",
+        "esp_log.h": "c",
+        "esp_err.h": "c"
+    },
+    "editor.formatOnSave": true,
+    "git.ignoreLimitWarning": true
+}

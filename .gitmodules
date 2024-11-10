@@ -1,0 +1,3 @@
+[submodule "components/ws2812"]
+	path = components/ws2812
+	url = https://github.com/badgeteam/esp32-component-ws2812

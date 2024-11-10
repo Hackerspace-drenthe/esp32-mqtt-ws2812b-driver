@@ -1,0 +1,20 @@
+menu "MQTT WS2812 driver"
+    config MQTT_TOPIC
+        string "MQTT topic to listen to"
+        default "emmen/kaart"
+    config MQTT_SERVER
+        string "MQTT server URI"
+        default "mqtt://mqtt.hackerspace-drenthe.nl/"
+    config WIFI_SSID
+        string "WiFi SSID"
+        default "HSD"
+    config WIFI_PASS
+        string "WiFi password"
+        default "hsd31337"
+    config LED_COUNT
+        int "Number of WS2812 LEDs"
+        default 10
+    config LED_GPIO
+        int "WS2812 ledstrip GPIO pin"
+        default 0
+endmenu
