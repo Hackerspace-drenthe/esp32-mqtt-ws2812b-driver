@@ -86,7 +86,7 @@ bool handle_message(void const *data, int len) {
     free(rgb_tmp);
 
     // Update the LEDs.
-    ESP_ERROR_CHECK_WITHOUT_ABORT(ws2812_send_data(led_rgb, CONFIG_LED_COUNT));
+    ESP_ERROR_CHECK_WITHOUT_ABORT(ws2812_send_data(led_rgb, CONFIG_LED_COUNT * 3));
 
     return true;
 }
